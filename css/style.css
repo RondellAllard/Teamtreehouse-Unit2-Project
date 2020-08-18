@@ -112,3 +112,84 @@ p {
 #contact b {
   font-weight: 500;
 }
+
+#contact .contact-detail p {
+  margin-bottom: 1rem;
+}
+
+#contact .footer-bar {
+  display: flex;
+  justify-content: space-between;
+  border-top: #777 solid 1px;
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+}
+
+/* Media queries */
+@media only screen and (min-width: 768px) {
+  /* Header , Home */
+  #home ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  #home li {
+    background-color: #f5f5f5;
+  }
+
+  #home .dev-info {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -1rem;
+  }
+
+  #home .dev-info img {
+    width: 45%;
+    padding-left: 2rem;
+  }
+
+  #home .dev-about {
+    text-align: left;
+  }
+
+  /* Main, Portfolio */
+  #portfolio .portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #portfolio .portfolio-item {
+    width: 48%;
+  }
+
+  #portfolio .portfolio-item:nth-child(2n + 2) {
+    margin-left: 1rem;
+  }
+
+  #portfolio .portfolio-item p {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #home {
+    padding: 3.5rem;
+  }
+
+  #home h1 {
+    padding-bottom: 0;
+  }
+
+  #home .nav-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #home li:last-child {
+    padding-right: 0;
+  }
+
+  #home .dev-avatar {
+    padding-left: 5rem;
+  }
+}
