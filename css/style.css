@@ -74,10 +74,31 @@ p {
   font-size: 1.3rem;
   color: #777;
 }
+
+/* My Skills */
+#my-skills {
+  background-color: #fff;
+  padding: 2.25rem 1.25rem;
+  text-align: center;
+}
+#my-skills dt {
+  font-weight: 600;
+  margin-top: 1rem;
+  padding-bottom: 0.2rem;
+}
+
+#my-skills dd {
+  padding: 0.2rem;
+  list-style-type: disc;
+}
+
+#my-skills .html {
+  list-style-type: square;
+  list-style-image: url(../img/HTML5_Badge_512.png);
+}
 /* Main, Portfolio */
 #portfolio {
   text-align: center;
-  background-color: #fff;
   padding: 2.25rem 1.25rem;
 }
 
@@ -101,8 +122,8 @@ p {
 }
 
 /* Footer, Contact */
-
 #contact {
+  background-color: #fff;
   padding: 4.75rem 1.25rem 2rem;
   text-align: center;
 }
@@ -135,7 +156,7 @@ p {
 }
 
 #contact .footer-bar li:first-child {
-  display: inline;
+  display: flex;
 }
 /* Media queries */
 @media only screen and (min-width: 768px) {
@@ -183,6 +204,17 @@ p {
   }
 
   /* Footer, contact */
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #contact > p {
+    width: 70%;
+    align-self: center;
+  }
+
   #contact .footer-bar ul {
     display: flex;
   }
@@ -221,5 +253,48 @@ p {
 
   #home .dev-avatar {
     padding-left: 5rem;
+  }
+
+  /* Porfolio, Main */
+  #portfolio .portfolio-item {
+    width: 31%;
+    margin-left: 1rem;
+  }
+
+  #portfolio .portfolio-item:nth-child(-3n + 4) {
+    margin-left: 0;
+  }
+}
+
+/* Animation */
+
+nav li:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+  transition-duration: 1000ms;
+  color: #111;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
   }
 }
