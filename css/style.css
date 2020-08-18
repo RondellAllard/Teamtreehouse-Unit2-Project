@@ -43,7 +43,7 @@ h2 {
 
 p {
   font-size: 1.25rem;
-  font-weight: 350;
+  font-weight: 400;
   margin-bottom: 2.5rem;
 }
 
@@ -59,11 +59,12 @@ p {
 #home h1 {
   font-size: 2rem;
   padding-bottom: 0.625em;
+  color: #000099;
 }
 
 #home li {
   font-size: 1.25rem;
-  font-weight: 750;
+  font-weight: 800;
   background-color: #fefefe;
   padding: 0.75rem;
   margin-bottom: 0.35em;
